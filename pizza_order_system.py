@@ -19,21 +19,21 @@ class Klasik(Pizza):
         print(self.description +"\n")
 
 class Margarita(Pizza):
-    cost = 50.0
+    cost = 60.0
 
     def __init__(self):
         self.description = "Margarita Malzemeler: Domates, Fesleğen, Mozarella"
         print(self.description +"\n")
 
 class TurkPizza(Pizza):
-    cost = 100.0
+    cost = 80.0
 
     def __init__(self):
         self.description = "Türk Malzemeler: Kıyma, Soğan, Biber, Sarımsak, Kaşar"
         print(self.description +"\n")
 
 class SadePizza(Pizza):
-    cost = 80.0
+    cost = 50.0
 
 
     def __init__(self):
@@ -56,42 +56,42 @@ class Decorator(Pizza):
     
 #Decorator alt sınıf oluşturulacak 
 class Zeytin(Decorator):
-    cost = 2.0
-
-    def __init__(self, topping):
-        Decorator.__init__(self, topping)
-
-
-class Mantar(Decorator):
     cost = 3.0
 
     def __init__(self, topping):
         Decorator.__init__(self, topping)
 
 
-class Peynir(Decorator):
+class Mantar(Decorator):
     cost = 4.0
 
     def __init__(self, topping):
         Decorator.__init__(self, topping)
 
 
+class Peynir(Decorator):
+    cost = 5.0
+
+    def __init__(self, topping):
+        Decorator.__init__(self, topping)
+
+
 class Et(Decorator):
-    cost = 10.0
+    cost = 8.0
 
     def __init__(self, topping):
         Decorator.__init__(self, topping)
 
 
 class Sogan(Decorator):
-    cost = 5.0
+    cost = 2.0
 
     def __init__(self, topping):
         Decorator.__init__(self, topping)
 
 
 class Misir(Decorator):
-    cost = 5.0
+    cost = 2.0
 
     def __init__(self, topping):
         Decorator.__init__(self, topping)
